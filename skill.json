@@ -1,0 +1,35 @@
+{
+  "name": "genpark-multi-agent-supervision-loop-intervention-governor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent supervision supervisor, stuck-loop breaker & autonomous intervention governor.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "agent-supervision",
+    "loop-breaker",
+    "autonomous-governor",
+    "fault-intervention",
+    "ph-august18"
+  ],
+  "inputs": {
+    "agent_telemetry_stream": {
+      "type": "array"
+    },
+    "max_retry_threshold": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "loop_detected": {
+      "type": "boolean"
+    },
+    "intervention_action_applied": {
+      "type": "string"
+    },
+    "fleet_health_index": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
